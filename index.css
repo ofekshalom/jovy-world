@@ -1,0 +1,24 @@
+body {
+  background: url("./pics/space.jpeg");
+}
+
+#container {
+  position: absolute;
+}
+
+#cat {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  position: relative;
+}
+
+#jov {
+  height: auto;
+  width: auto;
+  max-width: 100px;
+  max-height: 100px;
+  position: relative;
+  transform: rotate(360deg);
+}
