@@ -17,8 +17,17 @@ body {
 #jov {
   height: auto;
   width: auto;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 120px;
+  max-height: 120px;
+  position: relative;
+  transform: rotate(360deg);
+}
+
+#ofek {
+  height: auto;
+  width: auto;
+  max-width: 140px;
+  max-height: 140px;
   position: relative;
   transform: rotate(360deg);
 }

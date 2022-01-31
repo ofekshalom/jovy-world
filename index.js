@@ -9,6 +9,7 @@ function myMove() {
   var catElement = document.getElementById("cat");
   var jovElement = document.getElementById("jov");
   var pos = 0;
+  var top = 0;
   clearInterval(id);
   id = setInterval(frame, 5);
   function frame() {
@@ -19,8 +20,13 @@ function myMove() {
       jovElement.style.left = pos + "px";
     } else {
       pos = 0;
-      document.getElementById("cat").style.top += 100 + "px";
-      document.getElementById("jov").style.top += 100 + "px";
+      top += 100;
+      catElement.style.top = top + "px";
+      jovElement.style.top = top + "px";
+
+      if (top >= docHeight) {
+        top = 0;
+      }
     }
   }
 }
