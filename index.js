@@ -8,6 +8,8 @@ function myMove() {
   console.log("clicked");
   var catElement = document.getElementById("cat");
   var jovElement = document.getElementById("jov");
+  var ofekElement = document.getElementById("ofek");
+
   var pos = 0;
   var top = 0;
   clearInterval(id);
@@ -18,11 +20,13 @@ function myMove() {
 
       catElement.style.left = pos + "px";
       jovElement.style.left = pos + "px";
+      ofekElement.style.left = pos + "px";
     } else {
       pos = 0;
       top += 100;
       catElement.style.top = top + "px";
       jovElement.style.top = top + "px";
+      ofekElement.style.top = top + "px";
 
       if (top >= docHeight) {
         top = 0;
